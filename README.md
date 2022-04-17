@@ -1,4 +1,5 @@
-Cel projektu:
-# przegląd HTML 5
-# przegląd CSS
-# przegląd bootstrap
+# Cel projektu:
+- przegląd HTML 5
+- przegląd CSS
+- prosty JS
+- przegląd Bootstrap
