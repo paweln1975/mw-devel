@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="paweln">
+    <meta name="keywords" content="test, html, page">
+    <meta name="description" content="Sample HTML 5 Page">
     <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
             rel="stylesheet">
@@ -11,8 +14,119 @@
     <title>Web app testing</title>
 </head>
 <body>
-<div>To jest tekst w div - Element blokowy - wypełnia całą szerokość rodzica</div>
-<p>To jest tekst w paragraf - Element blokowy</p>
-<span>To jest tekst w span - Element liniowy</span>
+
+<nav>Nagivation</nav>
+<header>
+    <h1>Nagłówek - Maksymalnie jeden nagłówek na stronę / podstronę lub sekcję</h1>
+</header>
+<main>Tylko jeden main na stronie
+    <section>
+        <h2>Sekcja 1</h2>
+    </section>
+    <section>
+        <h2>Sekcja 2</h2>
+        <div>To jest tekst w div - Element blokowy - wypełnia całą szerokość rodzica</div>
+        <p>To jest tekst w paragraf - Element blokowy</p>
+        <span>To jest tekst w span - Element liniowy</span>
+        <a href="http://www.google.pl" target="blank" rel="noopener">Link z targetem blank otwiera w tej samej nowej karcie. Podkreślenie wymusza nową kartę</a>
+    </section>
+    <section>
+        <h2>Formularz</h2>
+        <form action="">
+            <button>Test me</button>
+            <button disabled>Disabled</button>
+            <div>
+                <label for="">Imię</label>
+                <input type="text"/>
+            </div>
+            <textarea name="tekst1" cols="30" rows="10"></textarea>
+            <div>
+            <select name="select1">
+                <option value="1">Jeden</option>
+                <option value="2">Dwa</option>
+            </select>
+            </div>
+            <div>
+                <input type="checkbox" name="Test1"><label for="">Test1</label>
+                <input type="checkbox" checked name="Test2"><label for="">Test2</label>
+            </div>
+            <div>
+                <input type="date">
+                <input type="password">
+                <input type="file">
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>Formatowanie tekstu</h2>
+        <b>Pogrubienie - stary tag - używać tylko przez css</b>
+        <br>
+        <strong>Pogrubienie - podnosi wartość semantyczną</strong>
+        <br>
+        <i>Pochylenie - stary tag - nie używać</i>
+        <br>
+        <em>Pochylenie - podnosi wartość semantyczna</em>
+        <br>
+        <u>Podkreślenie - stary tag - nie używać </u>
+        <p>Lorem impsum <mark>Nie odczytają go czytniki</mark> Lorem impsum</p>
+        <p>2<sup>2</sup>=4</p>
+        <p>H<sub>2</sub>O</p>
+        <pre>
+            Entery
+                 spacje
+                        Rzadko się z tego korzysta
+        </pre>
+        Test niełamliwej &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  spacji
+
+    </section>
+    <section>
+        <h2>Listy</h2>
+        <ol>
+            <li>Uporządkowany 1</li>
+            <li>Uporządkowany 2</li>
+            <li>Uporządkowany 3</li>
+
+        </ol>
+        <ul>
+            <li>Nieuporządkowany 1</li>
+            <li>Nieuporządkowany 2</li>
+            <li>Nieuporządkowany 3</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Tabela</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Nagłówek 1</th>
+                <th>Nagłówek 2</th>
+                <th>Nagłówek 3</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="2">Komórka 1</td>
+                <td rowspan="2">Komórka 3</td>
+            </tr>
+            <tr>
+                <td>Komórka 1</td>
+                <td>Komórka 2</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+            </tfoot>
+        </table>
+    </section>
+</main>
+
+<footer>Footer</footer>
+
+
+
 </body>
 </html>
