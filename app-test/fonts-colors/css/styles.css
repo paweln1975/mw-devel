@@ -26,3 +26,37 @@ body {
     font-weight: bold;
 }
 
+.formatted-p {
+    color: gold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.formatted-a {
+    color: white;
+    text-decoration: none;
+}
+
+.small {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.big {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.text {
+     text-transform: capitalize;
+     text-shadow: 5px 5px 5px white;
+}
+
+.centered-box {
+    line-height: 200px;
+    text-align: center;
+    height: 200px;
+    background-color: royalblue;
+    margin-top: 30px;
+}
+
