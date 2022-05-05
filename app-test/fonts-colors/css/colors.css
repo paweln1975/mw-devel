@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    font-size: 18px;
+    height: 100vh;
+    background-color: #333;
+    color: hsl(10, 50%, 100%);
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+div {
+    background-color: rgba(53, 20, 172, 0.5);
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 1;
+}
