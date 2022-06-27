@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+    font-size: 24px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+.green-text {
+    color: lime;
+}
+
+.red-text {
+    color: red;
+    text-decoration: underline;
+}
