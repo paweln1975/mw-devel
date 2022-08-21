@@ -1,0 +1,32 @@
+.box-1 {
+    background-color: gold;
+    width: 400px;
+    height: 400px;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.3)
+}
+
+.box-2 {
+    width: 100%;
+    max-width: 800px;
+    min-width: 500px;
+    height: 200px;
+    background-color: lime;
+}
+
+.box-3 {
+    width: 50vw;
+    height: 300px;
+    background-color: tomato;
+}
+
+.inside {
+    width: 50%;
+    height: 50vw;
+    background-color: #0076e8;
+}
