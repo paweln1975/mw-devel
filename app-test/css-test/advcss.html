@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Specyficzność CSS, Kaskadowość, Dziedziczenie, Kombinatory CSS</title>
+    <link rel="stylesheet" href="./css/adv.css">
+</head>
+<body>
+
+<section>
+    <p>Domyślny kolor section to tomato, ten paragraf dziedziczy styl po section</p>
+</section>
+<section>
+    <p style="color: tomato">Najważniejszy styl zastosowany z inline zmienia kolor na tomato</p>
+</section>
+<section>
+    <p id="p1">Paragraf p1 sformatowy any przez id wymusza kolor żółty</p>
+</section>
+<section>
+    <span>
+        <p>Paragraf w span w section, który będzie zielony</p>
+    </span>
+</section>
+<style>
+    section {
+        color: royalblue;
+    }
+</style>
+<section>
+    <p>Z racji że przeglądarka czyta style po kolei (kaskadowość) ten od teraz domyślnym kolorem sekcji to niebieski </p>
+</section>
+
+<section>
+    <div>
+        <p>Paragraf w div będzie podreślony z offsetem dla linii 5px</p>
+        <span>
+            <p>Kolejny podkreślony paragraf ale już z domyślnym offsetem dla linii, bo nie jest bezpośrednim
+            dzieckiem div</p>
+        </span>
+    </div>
+    <p>Ale już paragraf poza div nie będzie. I dodatkowo ten paragraf jest pierwszym bratem div'a</p>
+</section>
+<section>
+    <div>
+        To jest domyślny text w div
+    </div>
+    <p>Pierwszy brat diva</p>
+    <p>Drugi brat diva</p>
+    <p>Trzeci brat diva</p>
+</section>
+</body>
+</html>

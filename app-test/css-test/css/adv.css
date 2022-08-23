@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 10;
+}
+
+body {
+    font-size: 18px;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+}
+
+section {
+    color: tomato;
+}
+
+#p1 {
+    color: yellow;
+}
+
+p {
+    font-size: 24px;
+}
+
+section span p {
+    color: green;
+}
+
+div p {
+    text-decoration: underline;
+}
+
+div > p {
+    text-underline-offset: 5px;
+}
+
+div ~ p {
+    color: tomato;
+}
+
+div + p {
+    color: yellow;
+}
+
+
