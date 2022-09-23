@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    background-color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: lime;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.btn:hover {
+    background-color: gold;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 6px 0 rgba(0,0,0,0.19);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(3px);
+}
