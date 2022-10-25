@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+/*
+Ostyluj przyciski:
+czcionka Nunito,
+szerokość 120px,
+position absolute, top: 50px,
+left: spróbujcie % i transform z poprzedniego odcinka,
+padding 10px góra / dół, 30px po bokach,
+brak tła,
+biała, pogrubiona czcionka,
+białe obramowanie 3px,
+zaokrąglenie obramowania 5px,
+odstępy między literami 2px,
+zmiana małych liter na wielkie,
+kursor łapka.
+*/
+button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-zoom {
+    left: 25vw;
+}
+
+.btn-move {
+    left: 50vw;
+}
+
+.btn-color {
+    left: 75vw;
+}
+
+/*
+Ostyluj kwadraty:
+position absolute, top: 150px,
+left: zrób to co przy przyciskach,
+wymiary: 100px / 100px,
+zaokrąglenie 25px,
+nadaj kolor tła jak na podglądzie, cień ma ten sam kolor,
+rozmycie cienia 15px, brak przesunięcia na osiach X oraz Y,
+border 2px solid [ciemniejszy odcień kwadratu].
+*/
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    transition: 2s;
+}
+
+/*
+Po najechaniu na przycisk:
+tło białe,
+czcionka czarna,
+płynna animacja.
+*/
+
+button:hover {
+    cursor: grab;
+    background: white;
+    color: gray;
+}
+
+.red {
+    background-color: red;
+    left: 25vw;
+    box-shadow: 0px 0px 5px 5px red;
+    border: 2px solid red;
+}
+
+.blue {
+    background-color: blue;
+    left: 50vw;
+    box-shadow: 0px 0px 5px 5px blue;
+    border: 2px solid blue;
+}
+
+.green {
+    background-color: green;
+    left: 75vw;
+    box-shadow: 0px 0px 5px 5px green;
+    border: 2px solid green;
+}
+/*
+Nadaj akcje (wszysto ma być płynne):
+zoom: ma powiększyć kwadraty,
+move: ma przesunąć kwadraty w dół,
+color: ma zmienić kolor kwadratów i cienia na czarny, obramowanie białe.
+*/
+.btn-zoom:hover ~ .square {
+    width: 150px;
+    height: 150px;
+}
+
+.btn-move:hover ~ .square {
+    top: 300px;
+}
+
+.btn-color:hover ~ .square {
+    background-color: black;
+    box-shadow: 0px 0px 5px 5px black;
+    border: 2px solid white;
+}
