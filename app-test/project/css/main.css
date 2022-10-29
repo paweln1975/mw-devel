@@ -92,3 +92,89 @@ body {
 .icon-box a:hover {
     color: #0086f3;
 }
+
+/* main */
+
+.main {
+    position: relative;
+    margin: 50px auto;
+    width: 1200px;
+}
+
+.main h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-me-box {
+    margin: 40px 0;
+    position: relative;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+
+.top {
+    background-image: url('../static/river-gb4282bf73_1920.jpg');
+}
+
+.middle {
+    background-image: url('../static/ocean-gd2716df8c_1920.jpg');
+}
+
+.bottom {
+    background-image: url('../static/muhlviertel-ge9244f01d_1920.jpg');
+}
+
+.about-me-text {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    padding: 20px 40px;
+}
+
+.about-me-bg {
+    position: absolute;
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about-me-text h3 {
+    text-transform: uppercase;
+    bottom: 20px;
+}
+
+.services {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.services li {
+    margin-top: 10px;
+}
+
+.price-table {
+    margin: 0 auto;
+}
+
+.price-table td {
+    padding: 10px 30px;
+}
+
+.contact-info {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.contact-info .fas {
+    padding-right: 10px;
+}
