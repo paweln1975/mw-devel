@@ -13,55 +13,71 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<header class="header">
-    <div class="header-img">
-        <div class="header-bg"></div>
-        <div class="header-text">
-            <h1>creative ways</h1>
-            <p>Be cool and never stop thinking!</p>
-        </div>
-    </div>
-</header>
+
 <nav class="nav">
     <div class="container">
         <button class="burger-icon"><i class="fas fa-bars"></i></button>
         <div class="nav-items">
-            <a href="index.html">home</a>
-            <a href="services.html">services</a>
-            <a href="price-list.html">price list</a>
-            <a href="contact.html">contact</a>
+            <a href="#">home</a>
+            <a href="#about-us">about us</a>
+            <a href="#passions">our passions</a>
+            <a href="#contact">contact</a>
         </div>
     </div>
 </nav>
+<header class="header">
+    <div class="header-bg"></div>
+    <div class="header-text">
+        <h1>creative <span>ways</span></h1>
+        <p>Be cool and never stop thinking!</p>
+    </div>
+</header>
 <main class="main">
-    <h2>About me</h2>
+    <section class="about-us container" id="about-us">
+        <h2 class="section-title">About me</h2>
+        <p class="about-us-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi ea earum esse hic
+            illo ipsam molestias sint velit veritatis.</p>
+        <p class="about-us-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio eius illum magni
+            neque numquam pariatur perferendis quaerat ullam voluptate.</p>
+    </section>
 
-    <div class="about-me-box top">
-        <div class="about-me-bg"></div>
-        <div class="about-me-text">
-            <h3>I love moutains</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cupiditate esse ex
-                explicabo fuga nisi provident quia. Quam, qui, sequi.</p>
+    <section class="passions container" id="passions">
+        <h2 class="section-title">Passions</h2>
+        <div class="passion first-passion">
+            <div class="header-bg"></div>
+            <div class="header-text">
+                <h3>Water</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nam.</p>
+            </div>
         </div>
-    </div>
+        <div class="passion second-passion">
+            <div class="header-bg"></div>
+            <div class="header-text">
+                <h3>Mountains</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nam.</p>
+            </div>
+        </div>
+        <div class="passion third-passion">
+            <div class="header-bg"></div>
+            <div class="header-text">
+                <h3>Villages</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nam.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="about-me-box middle">
-        <div class="about-me-bg"></div>
-        <div class="about-me-text">
-            <h3>I love water</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cupiditate esse ex
-                explicabo fuga nisi provident quia. Quam, qui, sequi.</p>
-        </div>
-    </div>
-
-    <div class="about-me-box bottom">
-        <div class="about-me-bg"></div>
-        <div class="about-me-text">
-            <h3>I love villages</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cupiditate esse ex
-                explicabo fuga nisi provident quia. Quam, qui, sequi.</p>
-        </div>
-    </div>
+    <section class="contact container" id="contact">
+        <h2 class="section-title">CONTACT</h2>
+        <p class="contact-info">
+            <i class="fas fa-phone-square-alt"></i>48 999 999 999
+        </p>
+        <p class="contact-info">
+            <i class="fas fa-at"></i> mail@mail.com
+        </p>
+        <h3>Address</h3>
+        <p class="contact-info">Developers street 1</p>
+        <p class="contact-info">00-000 Kraków</p>
+    </section>
 </main>
 <footer class="footer">
     <p>&copy; 2022 Creative Ways
