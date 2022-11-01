@@ -1,0 +1,63 @@
+@use "./reset" as *;
+@use "./colors" as c;
+
+$main-color: c.$red-color;
+$default-color: c.$yellow-color;
+$square-size: 100px;
+
+$colors: (
+	main: $main-color,
+	opt: c.$green-color,
+);
+
+@mixin border-ext {
+	border: 3px solid black;
+	margin: 20px auto;
+	border-radius: 15px;
+}
+
+@mixin text-ext($decoration) {
+	text-decoration: $decoration;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@mixin size($size) {
+	width: $size;
+	height: $size;
+}
+
+body {
+	background-color: c.$bg-color;
+}
+
+.box {
+	@include size($square-size);
+	margin: 20px auto;
+	line-height: $square-size;
+	@include border-ext;
+}
+
+.color-main {
+	background-color: $main-color;
+}
+
+.color-opt {
+	background-color: $default-color;
+}
+
+.color-alt {
+	background-color: map-get($colors, opt);
+}
+
+.color-opt {
+	p {
+		@include text-ext(underline);
+	}
+}
+
+.color-main {
+	p {
+		@include text-ext(overline);
+	}
+}

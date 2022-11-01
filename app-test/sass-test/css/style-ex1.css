@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}/*# sourceMappingURL=style-ex1.css.map */
