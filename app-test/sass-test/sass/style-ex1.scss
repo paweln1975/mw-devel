@@ -2,9 +2,55 @@
 @use "./colors" as c;
 
 html {
-	font-size: 20px;
+	font-size: 10px;
+}
+
+@mixin fzc($fz) {
+	font-size: $fz;
+	color: c.$yellow-color;
+}
+
+@mixin crle {
+	width: 100px;
+	height: 100px;
+	margin: 30px auto;
+	background-color: c.$green-color;
+	border: 3px solid black;
+	border-radius: 50%;
+}
+
+body {
+	font-family: sans-serif;
 }
 
 h1 {
-	font-size: 2em;
+	@include fzc(3rem);
+}
+
+h2 {
+	@include fzc(2.4rem);
+}
+
+h3 {
+	@include fzc(1.8rem);
+}
+
+p {
+	font-size: 16px;
+}
+
+section {
+	height: 25vh;
+	text-align: center;
+}
+
+.odd {
+	background-color: c.$odd-color;
+}
+.even {
+	background-color: c.$even-color;
+}
+
+div.circle {
+	@include crle;
 }

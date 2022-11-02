@@ -9,9 +9,50 @@ a {
 }
 
 html {
-  font-size: 20px;
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3rem;
+  color: gold;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: gold;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: gold;
+}
+
+p {
+  font-size: 16px;
+}
+
+section {
+  height: 25vh;
+  text-align: center;
+}
+
+.odd {
+  background-color: rgb(45, 45, 165);
+}
+
+.even {
+  background-color: rgb(77, 175, 231);
+}
+
+div.circle {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background-color: lime;
+  border: 3px solid black;
+  border-radius: 50%;
 }/*# sourceMappingURL=style-ex1.css.map */
