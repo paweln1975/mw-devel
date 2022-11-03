@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 50px;
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	background-color: #333;
+	color: #fff;
+}
+
+div {
+	margin: 50px;
+}
+
+/* nie świeci się jeden paragraf bo nie jest pierwszym dzieckiem */
+p:first-child {
+	color: lime;
+}
+
+p:last-child {
+	color: blue;
+}
+
+p:first-of-type {
+	color: gold;
+}
+
+p:last-of-type {
+	color: greenyellow;
+}
+
+p:nth-child(2) {
+	border: 1px solid white;
+}
+
+p:nth-last-child(2) {
+	border: 1px solid white;
+}
+
+p:nth-of-type(10) {
+	border: 1px solid lime;
+}
+
+th,
+td {
+	padding: 5px;
+	border: 1px solid black;
+	color: black;
+}
+
+tr:nth-child(odd) {
+	background-color: rgb(231, 231, 231);
+}
+
+tr:nth-child(even) {
+	background-color: rgb(170, 166, 166);
+}
