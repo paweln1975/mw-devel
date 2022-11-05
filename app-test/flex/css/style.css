@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	font-size: 30px;
+}
+
+section {
+	display: flex;
+}
+
+
+
+.square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 200px;
+	height: 200px;
+	background-color: gold;
+	border: 3px solid black;
+}
