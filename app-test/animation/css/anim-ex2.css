@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+}
+
+.sky {
+	position: relative;
+	background-color: deepskyblue;
+	height: 80vh;
+	width: 100vw;
+	animation: sky-animation 10s linear 1s infinite;
+}
+
+@keyframes sky-animation {
+	0%,
+	100% {
+		background-color: deepskyblue;
+	}
+
+	25%,
+	75% {
+		background-color: rgb(9, 9, 110);
+	}
+
+	50% {
+		background-color: black;
+	}
+}
+
+.sun {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	top: 100px;
+	left: 100px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 70px yellow;
+	animation: sun-animation 10s linear 1s infinite;
+}
+
+@keyframes sun-animation {
+	0%,
+	100% {
+		top: 100px;
+	}
+
+	50% {
+		top: calc(100% + 100px);
+	}
+}
+
+.ground {
+	position: relative;
+	height: 20vh;
+	width: 100vw;
+}
+
+.grass {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(75, 199, 75);
+}
+
+.road {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 10vh;
+	background-color: grey;
+}
+
+.car {
+	position: absolute;
+	top: -10px;
+	left: 100px;
+	width: 150px;
+	height: 70px;
+	background-color: tomato;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	animation: car-animation 20s linear 1s infinite;
+}
+
+@keyframes car-animation {
+	from {
+		left: -200px;
+	}
+	to {
+		left: calc(100% + 200px);
+	}
+}
+
+.car::before,
+.car::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 40px;
+	height: 35px;
+	background-color: tomato;
+}
+
+.car::after {
+	right: -20px;
+	border-top-right-radius: 10px;
+}
+
+.car::before {
+	left: -20px;
+}
+
+.window {
+	position: absolute;
+	top: 5px;
+	width: 50px;
+	height: 30px;
+	background-color: rgb(57, 28, 160);
+}
+
+.rear-window {
+	border-top-left-radius: 9px;
+	left: 0;
+}
+
+.front-window {
+	border-top-right-radius: 9px;
+	right: 0;
+}
+
+.wheel {
+	position: absolute;
+	bottom: -10px;
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border-radius: 50%;
+	border: 2px dashed #999;
+	animation: wheel-animation 2s linear 1s infinite;
+}
+
+@keyframes wheel-animation {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.rear-wheel {
+	left: 8px;
+}
+
+.front-wheel {
+	right: 8px;
+	z-index: 1;
+}

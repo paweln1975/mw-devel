@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	overflow: hidden;
+}
+
+.square {
+	width: 400px;
+	height: 200px;
+	background-color: gold;
+	border: 3px solid black;
+	animation: color 4s linear 2s infinite;
+}
+
+.square:hover {
+	animation-play-state: paused;
+}
+
+.two {
+	animation-direction: reverse;
+}
+
+@keyframes color {
+	0%,
+	50%,
+	100% {
+		background-color: gold;
+		width: 400px;
+	}
+
+	25% {
+		background-color: lime;
+		width: 600px;
+	}
+
+	75% {
+		background-color: aqua;
+		width: 200px;
+	}
+}
+
+.colors {
+	height: 200px;
+	background-image: linear-gradient(
+		80deg,
+		tomato,
+		tomato,
+		gold,
+		royalblue,
+		lime,
+		royalblue,
+		gold,
+		tomato,
+		tomato
+	);
+	background-size: 800%;
+	animation: colors 7s linear 1s infinite;
+}
+
+@keyframes colors {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 100% 0;
+	}
+}
+
+.wrapper {
+	margin: 50px;
+	text-align: center;
+	line-height: 10px;
+}
+
+.small-square {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border-radius: 2px;
+	animation: fade 1.4s infinite;
+}
+
+.small-square:nth-child(2n) {
+	animation: fade 1s infinite;
+}
+
+.small-square:nth-child(3n) {
+	animation: fade 0.5s infinite;
+}
+
+@keyframes fade {
+	10% {
+		opacity: 1;
+		background-color: bisque;
+	}
+
+	50% {
+		opacity: 0;
+		background-color: cornflowerblue;
+	}
+
+	90% {
+		opacity: 1;
+		background-color: aqua;
+	}
+}
