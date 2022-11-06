@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	font-size: 50px;
+}
+
+section {
+	margin-top: 30px;
+	display: flex;
+	height: 500px;
+	border: 3px solid black;
+}
+
+.square {
+	width: 150px;
+	border: 3px solid black;
+	text-align: center;
+}
+
+.one {
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.one .green,
+.one .blue {
+	flex-grow: 1;
+}
+
+.two {
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.three {
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.three .red {
+	flex: 3 0;
+}
+
+.three .yellow {
+	order: 1;
+}
+.three .blue {
+	flex: 1 0;
+}
+
+.four {
+	flex-direction: row-reverse;
+	align-items: flex-end;
+}
+
+.four .green {
+	align-self: flex-start;
+}
+
+.four .yellow {
+	align-self: center;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.yellow {
+	background-color: gold;
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: tomato;
+}
