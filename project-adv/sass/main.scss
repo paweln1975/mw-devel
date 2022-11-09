@@ -1,0 +1,33 @@
+@use "./reset" as *;
+@use "./colors" as colors;
+html {
+	scroll-behavior: smooth;
+}
+body {
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+	background-color: #444;
+}
+
+nav {
+	text-transform: uppercase;
+	.menu-item {
+		color: colors.$menu-default;
+	}
+
+	.menu-item:hover {
+		color: colors.$menu-active;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+	}
+
+	.active {
+		color: colors.$menu-active;
+	}
+
+	.fa-bars {
+		padding: 10px;
+	}
+}

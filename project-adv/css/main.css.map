@@ -1,0 +1,1 @@
+{"version":3,"sources":["../sass/_reset.scss","main.css","../sass/main.scss","../sass/_colors.scss"],"names":[],"mappings":"AAAA;;;EAGC,sBAAA;EACA,SAAA;EACA,UAAA;ACCD;;ACJA;EACC,uBAAA;ADOD;;ACLA;EACC,kBAAA;EACA,qCAAA;EACA,sBAAA;ADQD;;ACLA;EACC,yBAAA;ADQD;ACPC;EACC,YCba;AFsBf;ACNC;EACC,YClBY;AF0Bd;ACLC;EACC,iBAAA;ADOF;ACJC;EACC,YC1BY;AFgCd;ACHC;EACC,aAAA;ADKF","file":"main.css"}
