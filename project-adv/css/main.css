@@ -13,7 +13,6 @@ html {
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
 }
 
 nav {
@@ -33,4 +32,38 @@ nav .active {
 }
 nav .fa-bars {
   padding: 10px;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero_sm.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+header .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 5;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+header .hero-text h1 {
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 5px black;
+}
+header .blue-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(43, 57, 179);
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/hero.png");
+  }
 }/*# sourceMappingURL=main.css.map */

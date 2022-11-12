@@ -6,7 +6,6 @@ html {
 body {
 	position: relative;
 	font-family: "Montserrat", sans-serif;
-	background-color: #444;
 }
 
 nav {
@@ -31,3 +30,52 @@ nav {
 		padding: 10px;
 	}
 }
+
+header {
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url("../img/hero_sm.png");
+		background-size: cover;
+		background-position: center;
+		z-index: -1;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		z-index: 5;
+		flex-direction: column;
+		// position: absolute;
+		// top: 10%;
+		// left: 50%;
+		text-align: center;
+		color: colors.$menu-default;
+
+		h1 {
+			letter-spacing: 1px;
+			text-shadow: 3px 3px 5px colors.$menu-active;
+		}
+	}
+
+	.blue-text {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: colors.$nav-color;
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		.hero-img {
+			background-image: url("../img/hero.png");
+		}
+	}
+}
+
+// .header span {
+// 	text-transform: uppercase;
+// 	color: #0086f3;
+// }
